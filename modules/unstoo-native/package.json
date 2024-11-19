@@ -1,0 +1,14 @@
+{
+  "name": "react-native-unstoo-native",
+  "version": "0.0.0",
+  "description": "native module",
+  "main": "src/index",
+  "author": " <> ()",
+  "license": "UNLICENSED",
+  "homepage": "#readme",
+  "create-react-native-library": {
+    "type": "module-legacy",
+    "languages": "cpp",
+    "version": "0.44.1"
+  }
+}
