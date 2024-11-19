@@ -1,0 +1,19 @@
+{
+  "name": "react-native-unstoo-only-turbo",
+  "version": "0.0.0",
+  "description": "only trubo cpp",
+  "main": "src/index",
+  "codegenConfig": {
+    "name": "RNUnstooOnlyTurboSpec",
+    "type": "modules",
+    "jsSrcsDir": "src"
+  },
+  "author": " <> ()",
+  "license": "UNLICENSED",
+  "homepage": "#readme",
+  "create-react-native-library": {
+    "type": "module-new",
+    "languages": "cpp",
+    "version": "0.44.1"
+  }
+}

@@ -2869,8 +2869,7 @@ __metadata:
     prettier: 2.8.8
     react: 18.3.1
     react-native: 0.76.2
-    react-native-unstoo-native: "link:./modules/unstoo-native"
-    react-native-unstoo-turbo: "link:./modules/unstoo-turbo"
+    react-native-unstoo-only-turbo: "link:./modules/unstoo-only-turbo"
     react-test-renderer: 18.3.1
     typescript: 5.0.4
   languageName: unknown
@@ -7822,15 +7821,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-unstoo-native@link:./modules/unstoo-native::locator=CppModule%40workspace%3A.":
+"react-native-unstoo-only-turbo@link:./modules/unstoo-only-turbo::locator=CppModule%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "react-native-unstoo-native@link:./modules/unstoo-native::locator=CppModule%40workspace%3A."
-  languageName: node
-  linkType: soft
-
-"react-native-unstoo-turbo@link:./modules/unstoo-turbo::locator=CppModule%40workspace%3A.":
-  version: 0.0.0-use.local
-  resolution: "react-native-unstoo-turbo@link:./modules/unstoo-turbo::locator=CppModule%40workspace%3A."
+  resolution: "react-native-unstoo-only-turbo@link:./modules/unstoo-only-turbo::locator=CppModule%40workspace%3A."
   languageName: node
   linkType: soft
 
