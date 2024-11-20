@@ -13,7 +13,8 @@
   "dependencies": {
     "react": "18.3.1",
     "react-native": "0.76.2",
-    "react-native-unstoo-only-turbo": "link:./modules/unstoo-only-turbo"
+    "react-native-unstoo-only-turbo": "link:./modules/unstoo-only-turbo",
+    "react-native-unstoo-bcrypt": "link:./modules/unstoo-bcrypt"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
