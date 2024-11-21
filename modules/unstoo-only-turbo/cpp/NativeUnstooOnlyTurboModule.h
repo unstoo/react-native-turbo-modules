@@ -1,4 +1,8 @@
+#if __has_include(<ReactCodegen/RNUnstooOnlyTurboSpecJSI.h>)
 #include <ReactCodegen/RNUnstooOnlyTurboSpecJSI.h>
+#elif __has_include("RNUnstooOnlyTurboSpecJSI.h")
+#include "RNUnstooOnlyTurboSpecJSI.h"
+#endif
 
 namespace facebook::react {
 class NativeUnstooOnlyTurboModule: public NativeUnstooOnlyTurboCxxSpec<NativeUnstooOnlyTurboModule> {

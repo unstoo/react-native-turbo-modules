@@ -1,51 +1,23 @@
-import React from 'react';
-import {StyleSheet, View, Button} from 'react-native';
-import {
-  reverseString,
-  promiseNumber,
-  callbacks,
-  getNumbers,
-  getObject,
-} from 'react-native-unstoo-only-turbo';
+import React, {useState} from 'react';
+import {StyleSheet, View, Button, ScrollView} from 'react-native';
+import BcryptScreen from './src/Bcrypt/BcryptScreen';
+import SimpleTurboScreen from './src/SimpleTurbo/SimpleTurboScreen';
 
 export default function App() {
+  const [screen, setScreen] = useState<string>('simpleTurbo');
   return (
     <View style={styles.container}>
-      <Button
-        title="reverse string"
-        onPress={() => {
-          console.log(reverseString('reverse string'));
-        }}
-      />
-      <Button
-        title="get number"
-        onPress={() => {
-          console.log(getNumbers());
-        }}
-      />
-      <Button
-        title="get object"
-        onPress={() => {
-          console.log(getObject());
-        }}
-      />
-      <Button
-        title="promise"
-        onPress={async () => {
-          const value = await promiseNumber(5);
-
-          console.log('promised value is: ', value);
-        }}
-      />
-      <Button
-        title="callbacks"
-        onPress={() => {
-          callbacks(
-            () => console.log('success'),
-            () => console.log('failure'),
-          );
-        }}
-      />
+      <ScrollView>
+        {screen === 'simpleTurbo' && <SimpleTurboScreen />}
+        {screen === 'bcrypt' && <BcryptScreen />}
+      </ScrollView>
+      <View style={styles.buttonContainer}>
+        <Button
+          title="Switch to Simple Turbo"
+          onPress={() => setScreen('simpleTurbo')}
+        />
+        <Button title="Switch to Bcrypt" onPress={() => setScreen('bcrypt')} />
+      </View>
     </View>
   );
 }
@@ -61,5 +33,11 @@ const styles = StyleSheet.create({
     width: 60,
     height: 60,
     marginVertical: 20,
+  },
+  buttonContainer: {
+    flexDirection: 'row',
+    gap: 8,
+
+    height: 60,
   },
 });
